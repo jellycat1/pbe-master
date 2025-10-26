@@ -106,10 +106,14 @@ body {
 
 .main-buttons-mobile {
     display: none;
+    flex-direction: column;
+    align-items: center;
 }
 
 .store-badge-img {
     margin: 5px 0;
+    max-width: 100%;
+    height: auto;
 }
 
 /* second page */
@@ -274,7 +278,61 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
+    .first-page {
+        margin: 30px 20px;
+    }
+    
+    .second-page {
+        padding: 50px 20px 80px 20px;
+    }
+    
+    .main-text-item {
+        font-size: 32px;
+    }
+    
+    .donate-text {
+        margin: 30px 20px;
+        font-size: 16px;
+    }
+    
+    .first-page-contact {
+        padding: 30px 20px;
+    }
+    
+    .contact-text {
+        font-size: 16px;
+    }
+    
+    .contact-li {
+        font-size: 16px;
+        margin: 0 0 0 20px;
+    }
+    
+    .feature-heading {
+        font-size: 18px;
+    }
+    
+    .feature-text {
+        font-size: 16px;
+    }
+    
+    .ready {
+        font-size: 28px;
+    }
+    
+    .download {
+        font-size: 18px;
+    }
 
+    .second-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #apple-second {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
 }
 
 /* change to hamburger menu at 530px */
@@ -285,5 +343,14 @@ body {
     .menu-icon {
         display: block;
         margin-right: 20px;
+    }
+    
+    .brand-name {
+        font-size: 18px;
+        margin: 0 0 0 10px;
+    }
+    
+    .brand-logo {
+        width: 32px;
     }
 }
