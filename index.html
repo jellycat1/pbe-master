@@ -18,15 +18,25 @@
         <p class="brand-name"><a class="brand-link" href="index.html">PBE Master</a></p>
     </div>
     <ul class="nav-links">
-    <!-- <li class="nav-item"><a class="nav-link" href="#features">Features</a></li> -->
-    <li class="nav-item"><a class="nav-link" href="donate.html">Donate</a></li>
-    <li class="nav-item"><a class="nav-link" id="contact" href="contact.html">Contact</a></li>
-    <li class="menu-icon"><?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-<svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M4 18L20 18" stroke="#3e3e3e" stroke-width="2" stroke-linecap="round"/>
-<path d="M4 12L20 12" stroke="#3e3e3e" stroke-width="2" stroke-linecap="round"/>
-<path d="M4 6L20 6" stroke="#3e3e3e" stroke-width="2" stroke-linecap="round"/>
-</svg></li>
+        <!-- Top-level nav items (visible on wide screens) -->
+        <li class="nav-item"><a class="nav-link" href="donate.html">Donate</a></li>
+        <li class="nav-item"><a class="nav-link" id="contact" href="contact.html">Contact</a></li>
+
+        <!-- Hamburger / mobile dropdown -->
+        <li class="menu-icon" aria-label="Menu">
+            <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+            <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 18L20 18" stroke="#3e3e3e" stroke-width="2" stroke-linecap="round"/>
+                <path d="M4 12L20 12" stroke="#3e3e3e" stroke-width="2" stroke-linecap="round"/>
+                <path d="M4 6L20 6" stroke="#3e3e3e" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+
+            <!-- Dropdown menu placed inside the hamburger li (valid HTML) -->
+            <ul class="nav-items-container">
+                <li class="nav-item-mobile"><a class="nav-link" href="donate.html">Donate</a></li>
+                <li class="nav-item-mobile"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </li>
     </ul>
 </nav>
     <div class="first-page">
@@ -42,11 +52,11 @@
                 <p class="main-text-item">Master Isaiah 1-33.</p>
             </div>
             <div class="main-buttons">
-                <a class="store-badge" href="#" aria-label="Download on the App Store">
+                <a class="store-badge" href="https://apps.apple.com/us/app/pbe-master/id6753881089" target="_blank" aria-label="Download on the App Store">
                 <img src="images/apple_store.png" class="store-badge-img" alt="App Store badge placeholder" style="height:56px; width:auto;">
                 </a>
                 <br>
-                <a class="store-badge" href="#" aria-label="Get it on Google Play">
+                <a class="store-badge" target="_blank" href="https://play.google.com/store/apps/details?id=com.enoch.pbemaster" aria-label="Get it on Google Play">
                 <img src="images/google_store.png" class="store-badge-img" alt="Google Play badge placeholder" style="height:56px; width:auto;">
                 </a>
             </div>
@@ -55,10 +65,10 @@
             <img src="images/phone.png" width="300" alt="Image of phone with PBE Master open">
         </div>
         <div class="main-buttons-mobile">
-            <a class="store-badge-mobile" href="#" aria-label="Download on the App Store">
+            <a class="store-badge-mobile" href="https://apps.apple.com/us/app/pbe-master/id6753881089" target="_blank" aria-label="Download on the App Store">
             <img src="images/apple_store.png" class="store-badge-img" alt="App Store badge placeholder" style="height:56px; width:auto;">
             </a>
-            <a class="store-badge-mobile" href="#" aria-label="Get it on Google Play">
+            <a class="store-badge-mobile" target="_blank" href="https://play.google.com/store/apps/details?id=com.enoch.pbemaster" aria-label="Get it on Google Play">
             <img src="images/google_store.png" class="store-badge-img" alt="Google Play badge placeholder" style="height:56px; width:auto;">
             </a>
         </div>
@@ -68,7 +78,7 @@
     <div id="features" class="second-page">
 
     
-        <p class="feature-heading">Interactive Quizzes</h3>
+        <p class="feature-heading">Practice Quizzes</h3>
         <p class="feature-text">Test your memory with verse-by-verse questions to reinforce learning.</p>
         
         <p class="feature-heading">Randomized Questions</h3>
@@ -87,15 +97,15 @@
         <p class="feature-text download">Download the app and start your quiz today.</p>
 
         <div class="second-buttons">
-            <a href="#"><img src="images/apple_store.png" width="175" id="apple-second" alt="App Store badge"></a>
-            <a href="#"><img src="images/google_store.png" width="175" alt="Google Store badge"></a>
+            <a href="https://apps.apple.com/us/app/pbe-master/id6753881089" target="_blank"><img src="images/apple_store.png" width="175" id="apple-second" alt="App Store badge"></a>
+            <a href="https://play.google.com/store/apps/details?id=com.enoch.pbemaster" target="_blank"><img src="images/google_store.png" width="175" alt="Google Store badge"></a>
         </div>
 
     </div>
 
     <footer class="footer">
         <p class="footer-text">&copy; <span id="year"></span> PBE Master</p>
-        <p class="footer-text">Developed by VineTech</p>
+        <p class="footer-text">Developed by <a class="vinetecha" href="vinetech.html"><u>VineTech</u></a></p>
     </footer>
 
 <script>
