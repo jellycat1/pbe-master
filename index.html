@@ -5,6 +5,18 @@
     <title>PBE Master</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    <meta name="description" content="An app to prepare Pathfinders for PBE">
+    <meta name="keywords" content="pbe, PBE, pbe master, PBE Master, pbemaster, PBEMaster, Pathfinders, Pathfinder Bible Experience, Isaiah, Bible Quiz, PBE Quiz, Pathfinder Bible">
+    <meta name="author" content="PBE Master">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="PBE Master">
+    <meta property="og:description" content="An app to prepare Pathfinders for PBE">
+    <meta property="og:image" content="images/pbemasterlogo.png">
+    <meta property="og:url" content="https://www.pbemaster.com">
+    <meta property="og:type" content="website">
 
 </head>
 <body>
@@ -19,13 +31,14 @@
     </div>
     <ul class="nav-links">
         <!-- Top-level nav items (visible on wide screens) -->
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
         <li class="nav-item"><a class="nav-link" href="donate.html">Donate</a></li>
         <li class="nav-item"><a class="nav-link" id="contact" href="contact.html">Contact</a></li>
 
         <!-- Hamburger / mobile dropdown -->
         <li class="menu-icon" aria-label="Menu">
-            <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-            <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- hamburger icon -->
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
                 <path d="M4 18L20 18" stroke="#3e3e3e" stroke-width="2" stroke-linecap="round"/>
                 <path d="M4 12L20 12" stroke="#3e3e3e" stroke-width="2" stroke-linecap="round"/>
                 <path d="M4 6L20 6" stroke="#3e3e3e" stroke-width="2" stroke-linecap="round"/>
@@ -33,6 +46,7 @@
 
             <!-- Dropdown menu placed inside the hamburger li (valid HTML) -->
             <ul class="nav-items-container">
+                <li class="nav-item-mobile"><a class="nav-link" href="about.html">About</a></li>
                 <li class="nav-item-mobile"><a class="nav-link" href="donate.html">Donate</a></li>
                 <li class="nav-item-mobile"><a class="nav-link" href="contact.html">Contact</a></li>
             </ul>
@@ -52,12 +66,12 @@
                 <p class="main-text-item">Master Isaiah 1-33.</p>
             </div>
             <div class="main-buttons">
-                <a class="store-badge" href="https://apps.apple.com/us/app/pbe-master/id6753881089" target="_blank" aria-label="Download on the App Store">
-                <img src="images/apple_store.png" class="store-badge-img" alt="App Store badge placeholder" style="height:56px; width:auto;">
+                <a class="store-badge" href="https://apps.apple.com/us/app/pbe-master/id6753881089" target="_blank" rel="noopener noreferrer" aria-label="Download on the App Store">
+                    <img src="images/apple_store.png" class="store-badge-img" alt="App Store badge">
                 </a>
                 <br>
-                <a class="store-badge" target="_blank" href="https://play.google.com/store/apps/details?id=com.enoch.pbemaster" aria-label="Get it on Google Play">
-                <img src="images/google_store.png" class="store-badge-img" alt="Google Play badge placeholder" style="height:56px; width:auto;">
+                <a class="store-badge" target="_blank" href="https://play.google.com/store/apps/details?id=com.enoch.pbemaster" rel="noopener noreferrer" aria-label="Get it on Google Play">
+                    <img src="images/google_store.png" class="store-badge-img" alt="Google Play badge">
                 </a>
             </div>
         </div>
@@ -65,11 +79,11 @@
             <img src="images/phone.png" width="300" alt="Image of phone with PBE Master open">
         </div>
         <div class="main-buttons-mobile">
-            <a class="store-badge-mobile" href="https://apps.apple.com/us/app/pbe-master/id6753881089" target="_blank" aria-label="Download on the App Store">
-            <img src="images/apple_store.png" class="store-badge-img" alt="App Store badge placeholder" style="height:56px; width:auto;">
+            <a class="store-badge-mobile" href="https://apps.apple.com/us/app/pbe-master/id6753881089" target="_blank" rel="noopener noreferrer" aria-label="Download on the App Store">
+                <img src="images/apple_store.png" class="store-badge-img" alt="App Store badge">
             </a>
-            <a class="store-badge-mobile" target="_blank" href="https://play.google.com/store/apps/details?id=com.enoch.pbemaster" aria-label="Get it on Google Play">
-            <img src="images/google_store.png" class="store-badge-img" alt="Google Play badge placeholder" style="height:56px; width:auto;">
+            <a class="store-badge-mobile" target="_blank" href="https://play.google.com/store/apps/details?id=com.enoch.pbemaster" rel="noopener noreferrer" aria-label="Get it on Google Play">
+                <img src="images/google_store.png" class="store-badge-img" alt="Google Play badge">
             </a>
         </div>
     </div>
@@ -78,21 +92,53 @@
     <div id="features" class="second-page">
 
     
-        <p class="feature-heading">Practice Quizzes</h3>
-        <p class="feature-text">Test your memory with verse-by-verse questions to reinforce learning.</p>
-        
-        <p class="feature-heading">Randomized Questions</h3>
-        <p class="feature-text">Every quize session is unique - keeps your studying fresh and dynamic.</p>
+    <p class="feature-heading">Practice Quizzes</p>
+    <p class="feature-text">Test your memory with verse-by-verse questions to reinforce learning.</p>
 
-        <p class="feature-heading">Favorites / Focus Mode</h3>
-        <p class="feature-text">Save difficult questions to revisit later and concentrate on trouble spots.</p>
+    <p class="feature-heading">Randomized Questions</p>
+    <p class="feature-text">Every quiz session is unique — it keeps your studying fresh and dynamic.</p>
 
-        <p class="feature-heading">NKJV Translation Support</h3>
-        <p class="feature-text">Specifically tailored to the NKJV text for reading, memorizing and reviewing.</p>
-       
-        <p class="feature-heading">Solo or Group Study</h3>
-        <p class="feature-text">Use it alone or with friends preparing for the Pathfinder Bible Experience Challenge.</p>
-        
+    <p class="feature-heading">Favorites / Focus Mode</p>
+    <p class="feature-text">Save difficult questions to revisit later and concentrate on trouble spots.</p>
+
+    <p class="feature-heading">NKJV Translation Support</p>
+    <p class="feature-text">Specifically tailored to the NKJV text for reading, memorizing and reviewing.</p>
+
+    <p class="feature-heading">Solo or Group Study</p>
+    <p class="feature-text">Use it alone or with friends preparing for the Pathfinder Bible Experience Challenge.</p>
+    </div>
+
+
+<section class="testimonial">
+    <div class="testimonial-grid">
+
+      <blockquote class="testimonial-card"> 
+        <p>"We are so glad this App has been created! It makes Pathfinder Bible Experience preparation efficient and effective. We use this in our personal and group study/review sessions. I like that there are a lot of questions that can be made out per chapter, and we can choose which chapters to focus on! Thanks again for developing this app!"</p>
+        <cite class="author">
+        — Arvi G., PBE Mentor
+        </cite>
+      </blockquote>
+
+      <blockquote class="testimonial-card"> 
+        <p>"All I can say is that it is amazing! I have 4 PBE teams I am mentoring and I am very picky on what material I give to them, but this passes with flying colors. The wording, the setup, everything is really awesome. So thank you and my teams will 100% be using this as prep."</p>
+        <cite class="author">
+        — Seth P., PBE Mentor
+        </cite>
+      </blockquote>
+
+      <blockquote class="testimonial-card"> 
+        <p>"This app is very user friendly! It is a big help for studying for the Pathfinder Bible Experience! We highly recommend it for all PBE participants!"</p>
+        <cite class="author">
+        — Malia B., Pathfinder
+        </cite>
+      </blockquote>
+
+
+    </div>
+  </section>
+
+
+    <div class="cta">
         <p class="feature-heading ready">Ready to master it?</p>
         <p class="feature-text download">Download the app and start your quiz today.</p>
 
@@ -102,6 +148,9 @@
         </div>
 
     </div>
+ 
+
+
 
     <footer class="footer">
         <p class="footer-text">&copy; <span id="year"></span> PBE Master</p>
