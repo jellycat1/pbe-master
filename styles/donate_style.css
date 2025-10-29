@@ -1,0 +1,25 @@
+/* Main content (donate) */
+
+.first-section {
+    height: 100%;
+}
+
+.main-text {
+    font-size: 18px;
+    color: var(--dark-gray);
+    margin: 50px 70px;
+}
+
+.donate-btn {
+    width: 175px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #fff;
+    background-color: var(--red);
+    text-decoration: none;
+    margin: 50px auto;
+}

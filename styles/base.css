@@ -1,0 +1,24 @@
+/* Reset + base */
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--off-white);
+    color: var(--dark-gray);
+}
+
+.everything {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+/* Media */
+
+@media only screen and (max-width: 930px) {
+    
+}

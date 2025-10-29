@@ -1,0 +1,17 @@
+/* Main content (about) */
+
+.first-section {
+    height: 100%;
+}
+
+.main-text {
+    font-size: 18px;
+    color: var(--dark-gray);
+    margin: 50px 70px;
+}
+
+.contact-li {
+    font-size: 18px;
+    margin-left: 90px;
+    color: var(--dark-gray);
+}
