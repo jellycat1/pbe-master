@@ -172,6 +172,15 @@
     }
 }
 
+
+@media only screen and (max-width: 470px) {
+  .download {
+        padding: 0 60px;
+    }
+}
+
+
+
 @media only screen and (max-width: 450px) {
     .features-section {
         padding: 0 20px 0 20px;
@@ -188,17 +197,11 @@
 }
 
 @media only screen and (max-width: 400px) {
-    .download {
-        padding: 0 20px;
-    }
     .cta-buttons {
         flex-direction: column;
         align-items: center;
     }
-}
-
-@media only screen and (max-width: 350px) {
     .ready {
-        padding: 0 30px;
+        padding: 0 40px;
     }
 }
