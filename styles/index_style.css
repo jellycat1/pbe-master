@@ -10,7 +10,7 @@
     line-height: 1.2;
 }
 
-.first-section-index {
+.first-section {
     margin: 60px 55px 90px 80px;
     display: flex;
     justify-content: space-between;
@@ -38,7 +38,7 @@
 
 /* Features (index) */
 
-.features-page-index {
+.features-section {
     padding: 60px 80px;
     background-image: url('images/background.png');
     background-size: cover;
@@ -112,4 +112,93 @@
     display: flex;
     justify-content: center;
     gap: 20px;
+}
+
+/* Carousel */
+
+/* Media */
+
+@media only screen and (max-width: 930px) {
+    .first-section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-text-item {
+        font-size: 36px;
+        text-align: center;
+    }
+    .main-buttons {
+        display: none;
+    }
+    .store-badge-mobile {
+        margin: 0 10px;
+    }
+    .main-buttons-mobile {
+        display: flex;
+        margin-top: 30px;
+    }
+    .phone-div-mobile {
+        display: block;
+        width: fit-content;
+        margin: 0 auto;
+    }
+    .phone-div {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .first-section {
+        margin: 30px 20px 50px 20px;
+    }
+    
+    .features-section {
+        padding: 50px 20px 80px 20px;
+    }
+    
+    .main-text-item {
+        font-size: 32px;
+    }
+
+    .testimonial-grid {
+        padding: 50px 20px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .features-section {
+        padding: 0 20px 0 20px;
+    }
+    .testimonial-grid {
+        padding: 0 20px;
+    }
+    .feature-heading {
+        font-size: 22px;
+    }
+    .feature-text {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .download {
+        padding: 0 20px;
+    }
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .ready {
+        padding: 0 30px;
+    }
 }

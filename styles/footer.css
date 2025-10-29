@@ -9,8 +9,8 @@
     padding: 0 30px;
 }
 .footer-sticky {
-    position: fixed;
-    bottom: 0;
+    /* position: fixed; */
+    /* bottom: 0; */
     max-width: 1000px;
     width: 100%;
 }

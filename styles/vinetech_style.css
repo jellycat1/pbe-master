@@ -1,26 +1,30 @@
 /* Main content (about) */
 
 .first-section {
-    height: fit-content;
     min-height: calc(100vh - 140px);
+    height: fit-content;
 }
 
 .main-text {
     font-size: 18px;
     color: var(--dark-gray);
-    margin: 0 auto;
-    padding: 0 80px;
-    line-height: 1.6;
+    margin: 0 80px;
 }
 
 @media only screen and (max-width: 930px) {
     .main-text {
-        padding: 0 20px;
+        margin: 0 20px;
+    }
+    .contact-li {
+        margin-left: 40px;
     }
 }
 
 @media only screen and (max-width: 530px) {
     .main-text {
+        font-size: 16px;
+    }
+    .contact-li {
         font-size: 16px;
     }
 }
