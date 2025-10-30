@@ -25,6 +25,7 @@
 </head>
 <body>
     <div class="everything">
+
     <!-- NAV -->
     <nav class="nav">
     <div class="brand-div">
@@ -37,6 +38,7 @@
         <!-- Top-level nav items (visible on wide screens) -->
         <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
         <li class="nav-item"><a class="nav-link" href="donate.html">Donate</a></li>
+        <li class="nav-item"><a class="nav-link" href="Resources.html">Resources</a></li>
         <li class="nav-item"><a class="nav-link" id="contact" href="contact.html">Contact</a></li>
 
         <!-- Hamburger / mobile dropdown -->
@@ -52,6 +54,7 @@
             <ul class="nav-items-container">
                 <li class="nav-item-mobile"><a class="nav-link" href="about.html">About</a></li>
                 <li class="nav-item-mobile"><a class="nav-link" href="donate.html">Donate</a></li>
+                <li class="nav-item-mobile"><a class="nav-link" href="Resources.html">Resources</a></li>
                 <li class="nav-item-mobile"><a class="nav-link" href="contact.html">Contact</a></li>
             </ul>
         </li>
@@ -60,44 +63,96 @@
     <div class="first-section">
         <div class="main-text-and-buttons">
 
-        <div class="phone-div-mobile">
-            <img src="images/phone.png" width="300" alt="Image of phone with PBE Master open">
-        </div>
+        <div id="phone-div-mobile" class="custom-carousel">
+    
+            <div class="carousel-track">
+                <div class="carousel-slide active">
+                    <img src="images/phone.png" alt="App screenshot 1" />
+                </div>
+                <div class="carousel-slide">
+                    <img src="images/phone2.png" alt="App screenshot 2" />
+                </div>
+                <div class="carousel-slide">
+                    <img src="images/phone3.png" alt="App screenshot 3" />
+                </div>
+                <div class="carousel-slide">
+                    <img src="images/phone4.png" alt="App screenshot 4" />
+                </div>
+                <div class="carousel-slide">
+                    <img src="images/phone5.png" alt="App screenshot 5" />
+                </div>
+            </div>
 
-        <div class="main-text">
-            <p class="main-text-item">Read.</p>
-            <p class="main-text-item">Memorize.</p>
-            <p class="main-text-item">Quiz yourself.</p>
-            <p class="main-text-item">Master Isaiah 1-33.</p>
+            <button class="carousel-control prev-btn" aria-label="Previous slide">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <button class="carousel-control next-btn" aria-label="Next slide">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            
+            <div class="carousel-indicators-custom">
+                <button class="indicator active" data-index="0" aria-label="Go to slide 1"></button>
+                <button class="indicator" data-index="1" aria-label="Go to slide 2"></button>
+                <button class="indicator" data-index="2" aria-label="Go to slide 3"></button>
+                <button class="indicator" data-index="3" aria-label="Go to slide 4"></button>
+                <button class="indicator" data-index="4" aria-label="Go to slide 5"></button>
+            </div>
         </div>
+            <div class="main-text">
+                <p class="main-text-item">Read.</p>
+                <p class="main-text-item">Memorize.</p>
+                <p class="main-text-item">Quiz yourself.</p>
+                <p class="main-text-item">Master Isaiah 1-33.</p>
+            </div>
+            <div class="main-buttons">
+                <a class="store-badge" href="https://apps.apple.com/us/app/pbe-master/id6753881089" target="_blank" rel="noopener noreferrer" aria-label="Download on the App Store">
+                    <img src="images/apple_store.png" class="store-badge-img" alt="App Store badge">
+                </a>
+                <br>
+                <a class="store-badge" target="_blank" href="https://play.google.com/store/apps/details?id=com.enoch.pbemaster" rel="noopener noreferrer" aria-label="Get it on Google Play">
+                    <img src="images/google_store.png" class="store-badge-img" alt="Google Play badge">
+                </a>
+            </div>
+        </div>
+        <div id="phone-div" class="custom-carousel">
+    
+            <div class="carousel-track">
+                <div class="carousel-slide active">
+                    <img src="images/phone.png" alt="App screenshot 1" />
+                </div>
+                <div class="carousel-slide">
+                    <img src="images/phone2.png" alt="App screenshot 2" />
+                </div>
+                <div class="carousel-slide">
+                    <img src="images/phone3.png" alt="App screenshot 3" />
+                </div>
+                <div class="carousel-slide">
+                    <img src="images/phone4.png" alt="App screenshot 4" />
+                </div>
+                <div class="carousel-slide">
+                    <img src="images/phone5.png" alt="App screenshot 5" />
+                </div>
+            </div>
 
-        <div class="main-buttons">
-            <a class="store-badge" href="https://apps.apple.com/us/app/pbe-master/id6753881089" target="_blank" rel="noopener noreferrer" aria-label="Download on the App Store">
-                <img src="images/apple_store.png" class="store-badge-img" alt="App Store badge">
-            </a>
-            <br>
-            <a class="store-badge" target="_blank" href="https://play.google.com/store/apps/details?id=com.enoch.pbemaster" rel="noopener noreferrer" aria-label="Get it on Google Play">
-                <img src="images/google_store.png" class="store-badge-img" alt="Google Play badge">
-            </a>
-        </div>
-
-        </div>
-        <div class="phone-div">
-            <img src="images/phone.png" width="300" alt="Image of phone with PBE Master open">
-        </div>
-
-        <div class="main-buttons-mobile">
-            <a class="store-badge-mobile" href="https://apps.apple.com/us/app/pbe-master/id6753881089" target="_blank" rel="noopener noreferrer" aria-label="Download on the App Store">
-                <img src="images/apple_store.png" class="store-badge-img" alt="App Store badge">
-            </a>
-            <a class="store-badge-mobile" target="_blank" href="https://play.google.com/store/apps/details?id=com.enoch.pbemaster" rel="noopener noreferrer" aria-label="Get it on Google Play">
-                <img src="images/google_store.png" class="store-badge-img" alt="Google Play badge">
-            </a>
+            <button class="carousel-control prev-btn" aria-label="Previous slide">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <button class="carousel-control next-btn" aria-label="Next slide">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            
+            <div class="carousel-indicators-custom">
+                <button class="indicator active" data-index="0" aria-label="Go to slide 1"></button>
+                <button class="indicator" data-index="1" aria-label="Go to slide 2"></button>
+                <button class="indicator" data-index="2" aria-label="Go to slide 3"></button>
+                <button class="indicator" data-index="3" aria-label="Go to slide 4"></button>
+                <button class="indicator" data-index="4" aria-label="Go to slide 5"></button>
+            </div>
         </div>
     </div>
 
     
-    <div id="features" class="features-section">
+    <div id="features" class="features-page-index">
 
     
     <p class="feature-heading">Practice Quizzes</p>
@@ -153,11 +208,89 @@
         <p class="footer-text">&copy; <span id="year"></span> PBE Master</p>
         <p class="footer-text">Developed by <a class="vinetecha" href="vinetech.html"><u>VineTech</u></a></p>
     </footer>
-
 <script>
     // small script for current year & smooth nav scroll
     document.getElementById('year').textContent = new Date().getFullYear();
-  
+
+    // --- REUSABLE CAROUSEL JS ---
+
+    function initializeCarousel(carousel) {
+        const track = carousel.querySelector('.carousel-track');
+        const slides = Array.from(carousel.querySelectorAll('.carousel-slide'));
+        const prevButton = carousel.querySelector('.prev-btn');
+        const nextButton = carousel.querySelector('.next-btn');
+        const indicators = carousel.querySelectorAll('.indicator');
+        // Get the interval from the data attribute, default to 3000ms
+        const intervalTime = parseInt(carousel.dataset.autoplayInterval) || 5000; 
+
+        let slideIndex = 0;
+        let autoPlayInterval;
+
+        const moveToSlide = (targetIndex) => {
+            // Calculate wrapping index
+            if (targetIndex >= slides.length) {
+                targetIndex = 0;
+            } else if (targetIndex < 0) {
+                targetIndex = slides.length - 1;
+            }
+            
+            slideIndex = targetIndex;
+            
+            // Calculate the distance to move the track
+            const slideWidth = slides[0].getBoundingClientRect().width;
+            track.style.transform = 'translateX(-' + slideWidth * slideIndex + 'px)';
+
+            // Update indicators
+            indicators.forEach(indicator => indicator.classList.remove('active'));
+            if (indicators.length > 0) {
+                indicators[slideIndex].classList.add('active');
+            }
+        };
+
+        const startAutoPlay = () => {
+            autoPlayInterval = setInterval(() => {
+                moveToSlide(slideIndex + 1);
+            }, intervalTime);
+        };
+        
+        const resetAutoPlay = () => {
+            clearInterval(autoPlayInterval);
+            startAutoPlay();
+        }
+
+        // Navigation buttons
+        prevButton.addEventListener('click', () => {
+            moveToSlide(slideIndex - 1);
+            resetAutoPlay();
+        });
+
+        nextButton.addEventListener('click', () => {
+            moveToSlide(slideIndex + 1);
+            resetAutoPlay();
+        });
+
+        // Indicator navigation
+        indicators.forEach(indicator => {
+            indicator.addEventListener('click', (e) => {
+                const targetIndex = parseInt(e.target.dataset.index);
+                moveToSlide(targetIndex);
+                resetAutoPlay();
+            });
+        });
+
+        // Handle resizing
+        window.addEventListener('resize', () => {
+            moveToSlide(slideIndex); // Recalculate and set the current position
+        });
+        
+        // Start auto-play
+        startAutoPlay();
+    }
+
+    // Find ALL elements with the class 'custom-carousel' and initialize the script for each one.
+    const allCarousels = document.querySelectorAll('.custom-carousel');
+    allCarousels.forEach(initializeCarousel);
+
 </script>
 </div>
 </body>
