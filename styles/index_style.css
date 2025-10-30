@@ -32,9 +32,111 @@
     height: auto;
 }
 
-.phone-div-mobile {
+#phone-div-mobile {
     display: none;
 }
+
+#phone-div {
+    position: relative;
+    overflow: hidden;
+    max-width: 300px;
+    /* margin: 0 auto; */
+    border-radius: 0.5rem;
+    /* box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); */
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-slide img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.3);
+    border: none;
+    color: white;
+    cursor: pointer;
+    z-index: 10;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.carousel-control:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+.carousel-control svg {
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    stroke: white;
+}
+
+
+.carousel-indicators-custom {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    z-index: 10;
+    padding: 0;
+    margin: 0;
+}
+
+.carousel-indicators-custom .indicator {
+    width: 10px;
+    height: 10px;
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 0;
+    transition: background-color 0.3s, opacity 0.3s;
+}
+
+.carousel-indicators-custom .indicator.active {
+    background-color: white;
+    opacity: 1;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
 
 /* Features (index) */
 
@@ -48,13 +150,15 @@
 
 .feature-heading {
     color: var(--red);
-    margin: 10px;
+    /* margin: 10px; */
+    margin: 0 80px;
     font-size: 28px;
 }
 
 .feature-text {
     color: var(--dark-gray);
-    margin: 10px 10px 30px 10px;
+    /* margin: 10px 10px 30px 10px; */
+    margin: 20px 80px;
     font-size: 20px;
 }
 
@@ -114,8 +218,6 @@
     gap: 20px;
 }
 
-/* Carousel */
-
 /* Media */
 
 @media only screen and (max-width: 930px) {
@@ -138,13 +240,24 @@
         display: flex;
         margin-top: 30px;
     }
-    .phone-div-mobile {
+    #phone-div-mobile {
         display: block;
         width: fit-content;
         margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+        max-width: 300px;
+        margin: 0 auto;
+        border-radius: 0.5rem;
     }
-    .phone-div {
+    #phone-div {
         display: none;
+    }
+    .feature-heading {
+        margin: 0 20px;
+    }
+    .feature-text {
+        margin: 20px 20px;
     }
 }
 
@@ -168,7 +281,7 @@
     }
 
     .testimonial-grid {
-        padding: 50px 20px;
+        padding: 50px 20px 20px 20px;
     }
 }
 
@@ -183,10 +296,10 @@
 
 @media only screen and (max-width: 450px) {
     .features-section {
-        padding: 0 20px 0 20px;
+        padding: 50px 20px 0 20px;
     }
     .testimonial-grid {
-        padding: 0 20px;
+        padding: 20px 20px;
     }
     .feature-heading {
         font-size: 22px;
