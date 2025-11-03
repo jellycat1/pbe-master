@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/nav.css">
     <link rel="stylesheet" href="styles/footer.css">
-    <link rel="stylesheet" href="styles/resources_style.css">
+    <link rel="stylesheet" href="styles/info_style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <meta name="description" content="An app to prepare Pathfinders for PBE">
@@ -25,40 +25,7 @@
 <body>
     <div class="everything">
     <!-- NAV -->
-    <nav class="nav">
-    <div class="brand-div">
-        <a class="brand" href="index.html">
-        <img src="images/pbemasterlogo.png" alt="PBE Master logo" class="brand-logo">
-        </a>
-        <p class="brand-name"><a class="brand-link" href="index.html">PBE Master</a></p>
-    </div>
-    <ul class="nav-links">
-        <!-- Top-level nav items (visible on wide screens) -->
-        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="donate.html">Donate</a></li>
-        <li class="nav-item"><a class="nav-link currently-selected" href="resources.html">Resources</a></li>
-        <li class="nav-item"><a class="nav-link" id="contact" href="contact.html">Contact</a></li>
-
-        <!-- Hamburger / mobile dropdown -->
-        <li class="menu-icon" aria-label="Menu">
-            <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-            <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M4 18L20 18" stroke="#3e3e3e" stroke-width="2" stroke-linecap="round"/>
-                <path d="M4 12L20 12" stroke="#3e3e3e" stroke-width="2" stroke-linecap="round"/>
-                <path d="M4 6L20 6" stroke="#3e3e3e" stroke-width="2" stroke-linecap="round"/>
-            </svg>
-
-            <!-- Dropdown menu placed inside the hamburger li (valid HTML) -->
-            <ul class="nav-items-container">
-                <li class="nav-item-mobile"><a class="nav-link" href="about.html">About</a></li>
-                <li class="nav-item-mobile"><a class="nav-link" href="donate.html">Donate</a></li>
-                <li class="nav-item-mobile"><a class="nav-link" href="resources.html">Resources</a></li>
-                <li class="nav-item-mobile"><a class="nav-link" href="contact.html">Contact</a></li>
-                
-            </ul>
-        </li>
-    </ul>
-</nav>
+    <div data-include="components/nav.html"></div>
     <div class="first-section">
         <br>
         <p class="main-text"><b>Resources</b>
@@ -67,14 +34,11 @@
             <br><br><a class="resource-link" target="_blank" href="https://pbeacademy.com">PBE Academy</a>: A web-based platform offering PBE quiz tools with a timer simulating real test environment<br><br></p>
     </div>
 
-    <footer class="footer-sticky footer">
-        <p class="footer-text">&copy; <span id="year"></span> PBE Master</p>
-        <p class="footer-text">Developed by <a class="vinetecha" href="vinetech.html"><u>VineTech</u></a></p>
-    </footer>
+    <div data-include="components/footer.html"></div>
 </div>
 </body>
+<script src="scripts/include.js"></script>
 <script>
-    
     document.getElementById('year').textContent = new Date().getFullYear();
 </script>
 </html>
