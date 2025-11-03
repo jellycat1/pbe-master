@@ -1,0 +1,52 @@
+/* Main content (about) */
+
+.first-section {
+    height: fit-content;
+    min-height: calc(100dvh - 140px);
+}
+
+.main-text {
+    font-size: px;
+    color: var(--dark-gray);
+    margin: 0 auto;
+    padding: 0 80px;
+    line-height: 1.6;
+}
+
+.donate-btn {
+    width: 200px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #fff;
+    background-color: var(--red);
+    text-decoration: none;
+    margin: 50px auto;
+}
+
+.contact-li {
+    font-size: 18px;
+    margin-left: 90px;
+    color: var(--dark-gray);
+}
+
+.resource-link {
+    color: var(--dark-gray);
+    text-decoration: underline;
+}
+
+
+@media only screen and (max-width: 930px) {
+    .main-text {
+        padding: 0 20px;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    .main-text {
+        font-size: 18px;
+    }
+}
