@@ -39,7 +39,7 @@
 }
 
 .main-buttons {
-    margin-top: 50px;
+    margin-top: 120px;
     padding: 0 4px;
 }
 
@@ -62,7 +62,7 @@
 #phone-div {
     position: relative;
     overflow: hidden;
-    max-width: 300px;
+    max-width: 400px;
     /* margin: 0 auto; */
     border-radius: 0.5rem;
     /* box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); */
@@ -74,7 +74,7 @@
 }
 
 .carousel-slide {
-    min-width: 300px;
+    min-width: 400px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -307,7 +307,7 @@
         margin: 0 auto;
         position: relative;
         overflow: hidden;
-        max-width: 300px;
+        max-width: 400px;
         margin: 0 auto;
         border-radius: 0.5rem;
     }
