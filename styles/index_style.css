@@ -123,7 +123,7 @@
 
 .carousel-indicators-custom {
     position: absolute;
-    bottom: 10px;
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
