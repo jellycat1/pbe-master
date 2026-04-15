@@ -10,14 +10,36 @@
     line-height: 1.2;
 }
 
+.main-text-item-small {
+    color: var(--dark-gray);
+    font-size: 18px;
+    max-width: 500px;
+    margin-top: 20px;
+}
+
+.star-section {
+    margin: 80px 85px 60px 110px;
+    /* text-align: center; */
+}
+
+.star-section-text-item-small {
+    color: var(--dark-gray);
+    font-size: 18px;
+}
+
 .first-section {
-    margin: 60px 55px 90px 80px;
+    /* margin: 60px 55px 30px 80px; */
+    padding: 60px 55px 30px 80px;
     display: flex;
     justify-content: space-between;
+    background-image: url('/images/gray_background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .main-buttons {
-    margin-top: 100px;
+    margin-top: 50px;
     padding: 0 4px;
 }
 
@@ -34,6 +56,7 @@
 
 #phone-div-mobile {
     display: none;
+    margin: 0 auto;
 }
 
 #phone-div {
@@ -51,7 +74,7 @@
 }
 
 .carousel-slide {
-    min-width: 100%;
+    min-width: 300px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -114,7 +137,7 @@
     width: 10px;
     height: 10px;
     border: 1px solid white;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(200, 200, 200, 0.5);
     border-radius: 50%;
     cursor: pointer;
     padding: 0;
@@ -122,7 +145,7 @@
 }
 
 .carousel-indicators-custom .indicator.active {
-    background-color: white;
+    background-color: gray;
     opacity: 1;
 }
 
@@ -140,26 +163,53 @@
 
 /* Features (index) */
 
-.features-section {
+/* .features-section {
     padding: 60px 80px;
     background-image: url('images/background.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
+} */
 
 .feature-heading {
-    color: var(--red);
-    /* margin: 10px; */
-    margin: 0 80px;
-    font-size: 28px;
+    /* color: var(--red); */
+    margin: 0 30px;
+    font-size: 18px;
 }
 
 .feature-text {
     color: var(--dark-gray);
-    /* margin: 10px 10px 30px 10px; */
-    margin: 20px 80px;
-    font-size: 20px;
+    margin: 20px 30px;
+    font-size: 14px;
+}
+
+.features-item {
+    background: linear-gradient(180deg,#fefefe,#ffffff);
+    border-radius: 12px;
+    padding: 20px 20px 20px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 0 10px 30px rgba(6,10,20,0.06);
+    color: var(--dark-gray);
+    
+}
+
+.feature-number {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--red);
+    margin-bottom: 12px;
+    margin-left: 20px; /* Move the number to the right */
+    text-align: center; /* Center-align the feature number */
+    line-height: 1.2; /* Adjust line height for better spacing */
+}
+
+.features-page-index {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 40px;
+    padding: 80px;
 }
 
 /* Testimonials (index) */
@@ -180,6 +230,10 @@
     color: var(--dark-gray);
     transform: translateY(0);
     transition: transform .2s ease-in-out;
+}
+
+.location {
+    font-weight: 600;
 }
 
 .testimonial-card:hover {
@@ -220,11 +274,18 @@
 
 /* Media */
 
+@media only screen and (max-width: 1000px) {
+    .features-page-index {
+        grid-template-columns: auto;
+    }
+}
+
 @media only screen and (max-width: 930px) {
     .first-section {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 60px 55px 30px 55px;
     }
     .main-text-item {
         font-size: 36px;
@@ -259,6 +320,18 @@
     .feature-text {
         margin: 20px 20px;
     }
+
+    .star-section-text-item-small {
+        text-align: center;
+    }
+
+    .main-text-item-small {
+        text-align: center;
+    }
+
+    .carousel-indicators-custom {
+        bottom: 0px;
+    }
 }
 
 @media only screen and (max-width: 900px) {
@@ -279,9 +352,18 @@
     .main-text-item {
         font-size: 32px;
     }
+    
 
     .testimonial-grid {
         padding: 50px 20px 20px 20px;
+    }
+
+    .features-page-index {
+        padding: 50px 20px 80px 20px;
+    }
+
+    .star-section {
+        margin: 50px 40px 80px 40px;
     }
 }
 
@@ -301,12 +383,12 @@
     .testimonial-grid {
         padding: 20px 20px;
     }
-    .feature-heading {
+    /* .feature-heading {
         font-size: 22px;
     }
     .feature-text {
         font-size: 18px;
-    }
+    } */
 }
 
 @media only screen and (max-width: 400px) {
